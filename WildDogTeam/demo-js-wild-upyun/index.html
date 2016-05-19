@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>结合又拍图片存储示例 </title>
+  <link href="favicon.ico" rel="shortcut icon">
+  <link rel="stylesheet" href="http://apps.bdimg.com/libs/bootstrap/3.0.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+<div class="container">
+  <div class="text-left col-md-12 wrapper">
+    <h1 class="text-left col-md-12 ">
+        Wilddog + upyun  实现图片存储和实时同步展示
+        <a class="btn btn-default view_github" href="https://github.com/WildDogTeam/demo-js-wild-upyun" target="_blank">
+          <img src="http://qtestbucket.qiniudn.com/GitHub-Mark-32px.png">
+          View Source on Github
+        </a>
+    </h1>
+    </div>
+    <div class="body">
+        <div class="col-md-12">
+            <div id="container">
+              <a class="btn btn-default btn-lg" id="pickfiles" href="javascript:;">
+                  <i class="glyphicon glyphicon-plus"></i>
+                  <span>选择图片</span>
+              </a>
+              <h3>文件列表：</h3>
+              <div id="filelist">Your browser doesn't have Flash, Silverlight or HTML5 support.</div>
+              <br/>
+              <a class="btn btn-default btn-lg" id="uploadfiles" href="javascript:;">  
+                  <span>上传图片</span>
+              </a>
+            </div>
+        </div>
+        <div class="col-md-12 ">
+          <div id="masonry" class="container-fluid">
+          </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src = "https://cdn.wilddog.com/js/client/current/wilddog.js" ></script>
+<script src="http://apps.bdimg.com/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="lib/md5.js"></script>
+<script src="lib/plupload-2.1.2/js/plupload.full.min.js"></script>
+<script src="lib/masonry-docs.min.js"></script> 
+<script src="main.js"></script>
+
+</html>
